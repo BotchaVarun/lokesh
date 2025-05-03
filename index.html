@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+
+        <nav>
+
+            <h1 class="logo"><span style="color: red;">L</span>OK</h1>
+            <ul>
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+              
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+
+            <p>Web Developer</p>
+            <h1>Hello Everyone ,  I am<br> <span style="color: red;">L</span>okesh </h1>
+        </div>
+    </div>
+</div>
+<!-- about  ------ -->
+<div id="about">
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="column1">
+<img src="bhanu.jpg" >
+            </div>
+            <div class="column2">
+<h1 class="title"> About me</h1>
+<p>
+    
+    Welcome to my portfolio! I am a passionate and dedicated Computer Science student with a strong foundation in Android app development, web design, and programming in Python and Java. Throughout my academic journey, I have honed my skills by working on various projects that demonstrate my ability to tackle complex problems and create innovative solutions. My experiences have equipped me with a solid understanding of software development principles, enabling me to build efficient, user-friendly applications and dynamic websites. I am excited to continue growing in the tech field and contribute to impactful projects that make a difference. Explore my portfolio to see my work and learn more about my journey in technology.</p>       
+<div class="tabtitles">
+            <p class="tablinks  activelinks" onclick="opentab('skills')">Skills</p>
+           
+            <p class="tablinks" onclick="opentab('education')">Education</p>
+         </div>  
+         <div class="tabcontents activetab" id="skills">
+
+            <ul>
+
+                <li><span>Java</span><br>Programming in Python</li>
+                <li><span>MERN Stack</span><br>Language for Web development</li>
+             
+            </ul>
+         </div> 
+         <div class="tabcontents" id="education">
+
+            <ul>
+
+                
+                <li><span>School</span><br> V.T High School</li>
+                <li><span>Inter</span><br> Narayana</li>
+                <li><span>B Tech</span><br>Anil Neerukonda Institute of Technology and Sciences</li>
+            </ul>
+         </div> 
+</div>
+        </div>
+    </div>
+</div>
+
+<!-- services         =---------- -->
+<div id="services">
+
+<div class="container">
+    <h1 class="title"> My Services</h1>
+<div class="serviceslist">
+    <div>
+
+        <h2>Web development</h2>
+       <p>Transform your ideas into dynamic, responsive websites that captivate and engage your audience. I specialize in crafting custom websites using the latest technologies and best practices to ensure fast, secure, and scalable web solutions. From personal blogs to complex e-commerce platforms, I provide end-to-end services that include front-end and back-end development, API integration, and website maintenance.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div>
+
+        <h2>App Development</h2>
+       <p>Bring your app vision to life with professional app development services tailored to meet your specific needs. Whether it's a mobile app for iOS and Android or a web-based application, I offer comprehensive development solutions that focus on user experience, performance, and scalability. From concept to deployment, I ensure your app is robust, intuitive, and ready to make an impact.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div>
+
+        <h2>Ui/Ux Design</h2>
+        <p>Create stunning, user-centered designs that enhance usability and delight your customers. My UI/UX design services combine creativity with usability to deliver interfaces that are not only beautiful but also intuitive and efficient. I focus on user research, wireframing, prototyping, and visual design to create seamless experiences that align with your brand and business goals.</p>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="contactleft">
+
+<h1 class="title">Contact Me</h1>
+<p>bonilokesh.22.csm@anits.edu.in</p>
+<p>+91 8367402043</p>
+<a href="RESUME AIML.pdf" download="" class="btn">Download cv</a>
+            </div>
+            <div class="contactright">
+                <form >
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="text" name="email" placeholder="Enter your email" required>
+                    <textarea name="message"  rows="6" placeholder="Enter your message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+    let tablinks = document.getElementsByClassName("tablinks");
+    let tabcontents = document.getElementsByClassName("tabcontents");
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("activelinks");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks")
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+</body>
+</html>
